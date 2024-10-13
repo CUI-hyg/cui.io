@@ -1,0 +1,2 @@
+[wechat]
+"https://116-142-255-142.pd1.cjjd19.com:30443/download-cdn.cjjd19.com/123-64/a64cfbd8/1837594907-0/a64cfbd8dcc8638a881b51ce7b762040/c-m37?v=5&t=1727526120&s=1727526120e1ae152351b2ceca3cde051a31207504&r=ED60TB&bzc=1&bzs=1837594907&filename=Wechat.7z&x-mf-biz-cid=34c27305-f2bf-447a-ad13-592bb9fb59cc-584000&auto_redirect=0&cache_type=1&xmfcid=2dad7dee-75ec-40d7-9dda-f2f03d8d5229-1-50111d3b1"
