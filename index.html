@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Download</title>
+    <script>
+        // 当页面加载完成后自动触发下载
+        window.onload = function() {
+            // 创建一个隐藏的 <a> 标签
+            var downloadLink = document.createElement('a');
+            downloadLink.href = 'down.txt';
+            downloadLink.download = 'down.txt';  // 设置下载的文件名
+            document.body.appendChild(downloadLink);
+            
+            // 触发点击事件
+            downloadLink.click();
+            
+            // 移除 <a> 标签
+            document.body.removeChild(downloadLink);
+        };
+    </script>
+</head>
+<body>
+    <h1>Downloading down.txt...</h1>
+</body>
+</html>
