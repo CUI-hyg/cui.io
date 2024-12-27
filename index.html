@@ -2,6 +2,12 @@
 <html lang="en">
 <head>CUI Alpha Intelligence</head>
 <body>
+    <button onClick={() => {
+        cozeWebSDK.showChatBot();
+    }}>显示聊天框</button>
+    <button onClick={() => {
+        cozeWebSDK.hideChatBot();
+    }}>隐藏聊天框</button>
     
       <script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.1.0-beta.0/libs/cn/index.js"></script>
       <script>
