@@ -1,40 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>CUI Alpha Intelligence</head>
-<body>
-      <script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.1.0-beta.0/libs/cn/index.js"></script>
-      <script>
-          new CozeWebSDK.WebChatClient({
-            config: {
-              bot_id: '7451202877756440591',
-            },
-            componentProps: {
-              title: 'CUI Alpha Intelligence',
-            userInfo: {
-              url: 'https://lf-coze-web-cdn.coze.cn/obj/coze-web-cn/obric/coze/favicon.1970.png',
-              nickname: '你',
-            },
-            ui: {
-              base: {
-              icon: 'https://lf-coze-web-cdn.coze.cn/obj/coze-web-cn/obric/coze/favicon.1970.png',
-              layout: 'mobile',
-              zIndex: 1000,
-                     },
-              asstBtn: {
-              isNeed: true,
-                       },
-              footer: {
-              isShow: true,
-              expressionText: 'Powered by {{name}}',
-              linkvars: {
-              name: {
-            text: '(c) CUIAI.Dev 2025',
-            link: 'https://cui-hyg.github.io/'
-          },
+<head>
+    <style>
+        /* 自定义悬浮入口的位置 */
+        #position_demo {
+            position: absolute;
+            right: 90px;
+            bottom: 20px;
         }
-            },
-          });
-      </script>
+    </style>
+</head>
+<body>
+<h1>Hello Bot</h1>
+<div id="position_demo"></div>
+<script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.1.0-beta.0/libs/cn/index.js"></script>
+<script>
+    const bot_id = '7451202877756440591';
+    // 自定义智能体名称和icon
+    const title = 'CUI Alpha Intelligence';
+    const icon = 'https://lf-bot-studio-plugin-resource.coze.cn/obj/bot-studio-platform-plugin-tos/artist/image/7e813aa2c7e14ebb9e2d1a989acfb128.png';
+    const lang = 'zh-CN';
+    const layout = 'pc';
+    const width = 1000;
     
+    new CozeWebSDK.WebChatClient({
+        config: {
+            bot_id,
+        },
+        componentProps: {
+            title,
+            icon,
+            width,
+        },
+        el: document.getElementById('position_demo'),
+    });
+</script>
 </body>
 </html>
